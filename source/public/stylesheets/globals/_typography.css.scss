@@ -1,0 +1,17 @@
+// -----------------------------------------------
+// Typography.css.scss
+//
+// Define fonts of project
+// -----------------------------------------------
+
+@import url(http://fonts.googleapis.com/css?family=Signika);
+
+// Import Icons Font
+@include font-face($icons-font,
+  font-files(
+      'offcanvas_icons.woff', woff,
+      'offcanvas_icons.ttf' , ttf,
+      'offcanvas_icons.svg' , svg
+    ),
+    'offcanvas_icons.eot'
+  );

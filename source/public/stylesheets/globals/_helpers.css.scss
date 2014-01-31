@@ -1,0 +1,49 @@
+// -----------------------------------------------------------
+// Helpers.css.scss
+//
+// Contains functions and mixins to help on development
+// -----------------------------------------------------------
+
+
+// -----------------------------------------------------------
+// Define Functions
+// -----------------------------------------------------------
+
+@function em($pixels: 0, $base: 16) {
+  @return scut-em($pixels, $base);
+}
+
+
+// -----------------------------------------------------------
+// Define Mixins
+// -----------------------------------------------------------
+
+@mixin generate-icon-classes( $arr-icons ) {
+  [class*="icon-"] {
+    @include icon-fonts();
+  }
+
+  @each $classes in $arr-icons {
+    .#{nth($classes, 1)} {
+      &:before { content: nth($classes, 2); }
+    }
+  }
+}
+
+@mixin icon-fonts() {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'offcanvasIcons';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  margin-right: em(10);
+  -webkit-font-smoothing: antialiased;
+
+  &[class*="right"]:before {
+    margin-right: 0;
+    margin-left: $space-10;
+  }
+}

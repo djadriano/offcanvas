@@ -1,0 +1,30 @@
+// -----------------------------------------------
+// Icons.css.scss
+//
+// Define icons that is used in the app
+// -----------------------------------------------
+
+$icons-font: (
+  'icon-arrow-down'  '\f100',
+  'icon-arrow-left'  '\f101',
+  'icon-arrow-right' '\f102',
+  'icon-arrow-up'    '\f103',
+  'icon-chat'        '\f104',
+  'icon-close'       '\f105',
+  'icon-config'      '\f106',
+  'icon-chat'        '\f107',
+  'icon-heart'       '\f108',
+  'icon-mail'        '\f109',
+  'icon-navigation'  '\f10a',
+  'icon-person'      '\f10b',
+  'icon-search'      '\f10c',
+  'icon-video'       '\f10d'
+);
+
+/*
+ * -------------------------------------------
+ * Execute mixins
+ * -------------------------------------------
+ */
+
+@include generate-icon-classes( $icons-font );

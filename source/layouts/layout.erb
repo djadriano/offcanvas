@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="cleartype" content="on">
+
+    <title>Off Canvas Prototype</title>
+
+    <!-- stylesheet -->
+    <%= yield_content :stylesheet %>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  </head>
+
+  <body class="<%= page_classes %>">
+
+    <%= partial 'shared/offcanvas' %>
+    <%= partial 'shared/header' %>
+
+    <div class="app-content">
+      <%= yield %>
+    </div>
+
+    <%= yield_content :javascript %>
+
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "fonts": [
+    "/Users/adrianof/Documents/Studies/offcanvas/source/public/images/icons/fontcustom/fontcustom_defa7972ce6967fe274223a60818a05d.ttf",
+    "/Users/adrianof/Documents/Studies/offcanvas/source/public/images/icons/fontcustom/fontcustom_defa7972ce6967fe274223a60818a05d.woff",
+    "/Users/adrianof/Documents/Studies/offcanvas/source/public/images/icons/fontcustom/fontcustom_defa7972ce6967fe274223a60818a05d.eot",
+    "/Users/adrianof/Documents/Studies/offcanvas/source/public/images/icons/fontcustom/fontcustom_defa7972ce6967fe274223a60818a05d.svg"
+  ],
+  "templates": [
+    "/Users/adrianof/Documents/Studies/offcanvas/source/public/images/icons/fontcustom/fontcustom.css",
+    "/Users/adrianof/Documents/Studies/offcanvas/source/public/images/icons/fontcustom/fontcustom-preview.html"
+  ],
+  "glyphs": [
+    "arrow_down",
+    "arrow_left",
+    "arrow_right",
+    "arrow_up",
+    "chat",
+    "close",
+    "config",
+    "grid",
+    "heart",
+    "mail",
+    "navigation",
+    "person",
+    "search",
+    "video"
+  ]
+}

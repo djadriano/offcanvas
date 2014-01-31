@@ -1,0 +1,65 @@
+// -----------------------------------------------
+// Offcanvas.css.scss
+// -----------------------------------------------
+
+.offcanvas {
+  @include translate3d(0, 0, 0);
+  background: #0c0c0c;
+  position: absolute ;
+  top: 0;
+  left: 0;
+  width: em(260);
+  height: 100%;
+  min-height: 100%;
+  -webkit-user-select: none;
+  overflow-y: auto;
+}
+
+.offcanvas-content {
+  margin: em(20);
+  padding: 0;
+  overflow-y: visible;
+
+  dt,
+  dd {
+    margin: 0;
+    padding: 0;
+  }
+
+  dt {
+    color: #fff;
+    margin: em(20) em(20) em(10) em(20);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  dd {
+    font-size: em(16);
+    border-bottom: 1px solid #222;
+
+    a {
+      @include transition(color 200ms ease);
+      color: #666;
+      text-decoration: none;
+      display: block;
+      padding: em(15) 0;
+
+      &:hover,
+      &:active {
+        color: #fff;
+
+        [class*="icon-"] {
+          color: #fff;
+          margin-right: em(20);
+        }
+      }
+    }
+
+    [class*="icon-"] {
+      @include transition(color 200ms ease, margin-right 200ms ease 50ms);
+      color: #666;
+    }
+
+    &:last-child { border-bottom: 0; }
+  }
+}
